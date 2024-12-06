@@ -1,7 +1,8 @@
 import React from 'react';
 import { CssBaseline, Container, Typography } from '@mui/material';
 import CalendarGrid from './components/CalendarGrid';
-import advent from './assets/advent1.jpg'; // Import the image correctly
+import advent from './assets/advent1.jpg'; 
+import chris from './assets/CHRIS.jpg';
 
 const App = () => {
     return (
@@ -9,7 +10,7 @@ const App = () => {
             <CssBaseline />
             <div
                 style={{
-                    backgroundImage: `url(${advent})`,
+                    backgroundImage: `url(${chris})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
