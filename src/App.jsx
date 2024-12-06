@@ -50,6 +50,7 @@ const App = () => {
                             padding: 2,
                             borderRadius: 4,
                             fontFamily: 'cursive',
+                            fontSize: '2rem',
                         }}>
                         🎄 Adventskalender für Toni 🎅
                         </Box>
