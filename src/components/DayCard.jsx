@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Card, CardContent, Typography, Box, Tooltip } from '@mui/material';
-import TouchRipple from '@material-ui/core/ButtonBase/TouchRipple';
 
 
 
