@@ -24,6 +24,7 @@ const DayCard = ({ day, content, isPastOrToday }) => {
                 borderRadius: 2,
                 boxShadow: 3,
                 opacity: isPastOrToday ? 1 : 0.7,
+                fontFamily: 'cursive',
                 transition: 'transform 0.3s',
                 '&:hover': {
                     transform: isPastOrToday && !isOpen ? 'scale(1.05)' : 'none',
@@ -32,9 +33,9 @@ const DayCard = ({ day, content, isPastOrToday }) => {
         >
             <CardContent>
                 {!isOpen ? (
-                    <Typography variant="h4">{day}</Typography>
+                    <Typography sx={{fontFamily: "cursive"}}  variant="h4">{day}</Typography>
                 ) : (
-                    <Typography variant="body1">{content}</Typography>
+                    <Typography sx={{fontFamily: "cursive"}} variant="body1">{content}</Typography>
                 )}
             </CardContent>
         </Card>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CssBaseline, Container, Typography } from '@mui/material';
+import { CssBaseline, Container, Typography, Box } from '@mui/material';
 import CalendarGrid from './components/CalendarGrid';
 import videoBackground from './assets/snowflakes.webm'; // Your WebM video
 
@@ -45,7 +45,14 @@ const App = () => {
                     }}
                 >
                     <Typography variant="h2" sx={{ color: 'black' }} gutterBottom>
+                        <Box sx={{
+                            backgroundColor: 'rgba(255, 255, 255, 0.4)',
+                            padding: 2,
+                            borderRadius: 4,
+                            fontFamily: 'cursive',
+                        }}>
                         🎄 Adventskalender für Toni 🎅
+                        </Box>
                     </Typography>
                     <CalendarGrid />
                 </Container>
