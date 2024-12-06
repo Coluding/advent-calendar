@@ -33,9 +33,9 @@ const DayCard = ({ day, content, isPastOrToday }) => {
         >
             <CardContent>
                 {!isOpen ? (
-                    <Typography sx={{fontFamily: "cursive"}}  variant="h4">{day}</Typography>
+                    <Typography sx={{fontFamily: "cursive",}}  variant="h4">{day}</Typography>
                 ) : (
-                    <Typography sx={{fontFamily: "cursive"}} variant="body1">{content}</Typography>
+                    <Typography sx={{fontFamily: "cursive", color: "black", fontSize: "18px"}} variant="body1">{content}</Typography>
                 )}
             </CardContent>
         </Card>
