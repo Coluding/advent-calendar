@@ -1,8 +1,7 @@
 import React from 'react';
 import { CssBaseline, Container, Typography } from '@mui/material';
 import CalendarGrid from './components/CalendarGrid';
-import advent from './assets/advent1.jpg'; 
-import chris from './assets/CHRIS.jpg';
+import videoBackground from './assets/snowflakes.webm'; // Your WebM video
 
 const App = () => {
     return (
@@ -10,19 +9,42 @@ const App = () => {
             <CssBaseline />
             <div
                 style={{
-                    backgroundImage: `url(${chris})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    minHeight: '100vh', 
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
+                    position: 'relative',
+                    minHeight: '100vh', // Covers the entire screen
+                    overflow: 'hidden', // Ensures content stays within the bounds
                 }}
             >
-                <Container maxWidth="lg" sx={{ textAlign: 'center', padding: 4, borderRadius: 2 }}>
-                    <Typography variant="h2" sx={{color: "white"}} gutterBottom>
+                {/* Background Video */}
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover', // Ensures the video covers the whole area
+                        zIndex: -1, // Sends the video behind other elements
+                    }}
+                >
+                    <source src={videoBackground} type="video/webm" />
+                    Your browser does not support the video tag.
+                </video>
+
+                {/* Content */}
+                <Container
+                    maxWidth="lg"
+                    sx={{
+                        textAlign: 'center',
+                        padding: 4,
+                        borderRadius: 2,
+                        zIndex: 1, // Keeps the content above the video
+                        position: 'relative', // Ensures proper stacking
+                    }}
+                >
+                    <Typography variant="h2" sx={{ color: 'black' }} gutterBottom>
                         🎄 Adventskalender für Toni 🎅
                     </Typography>
                     <CalendarGrid />
