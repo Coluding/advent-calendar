@@ -6,7 +6,7 @@ const daysData = [
     { day: 5, content: "🫓 Naan Brot Gutschein" },
     { day: 6, content: "🎅 Nikolaus:  Gutschein für vegane Kürbis-Carbonara (nur dir zu Liebe)"},
     { day: 7, content: "🍜 Badewanne Session mit Podcast hehe" },
-    { day: 8, content: "🛀 Ein entspannendes Schaumbad mit Kerzen und Musik für dich." },
+    { day: 8, content: "🍗 Gutschein für Veganes Butter Chicken " },
     { day: 9, content: "🍕 Selbstgemachte Pizza-Abend – du bestimmst die Toppings!" },
     { day: 10, content: "🎬 Ein Filmabend mit deinem Lieblingsfilm und selbstgmeachtem Popcorn." },
     { day: 11, content: "🍝 Vegetarische Lasagne, wenn es sein muss, auch vegan hehe" },
