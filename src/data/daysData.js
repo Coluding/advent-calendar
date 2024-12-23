@@ -22,7 +22,7 @@ const daysData = [
     { day: 21, content: "🥞 Gutschein für ein Frühstück im Bett: Ich mache dir dein Traumfrühstück." },
     { day: 22, content: "🏀 Basketball Kurs von mir!" },
     { day: 23, content: "🍣 Sushi-Abend – selbst gemacht natürlich." },
-    { day: 24, content: "🌟 Frohe Weihnachten! Bitte les dich hier ein suche dir ein Armband aus! https://clubocean.co/" }
+    { day: 24, content: "🌟 Frohe Weihnachten! Schau mal hier: https://www.airbnb.de/wishlists/invite/998c89c3-6f12-4646-8060-8b8ee5447c7a?s=67&unique_share_id=399c6b30-d5c3-44b6-85ba-c1dd56d1276c" }
 ];
 
 export default daysData;
